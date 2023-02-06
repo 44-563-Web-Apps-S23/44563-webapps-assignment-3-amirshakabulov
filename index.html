@@ -69,7 +69,24 @@
           <td>Hagia Sophia - beautiful ancient mosque with long history</td>
           <td>4 Days</td>
       </tr>
+      <tr>
+        <td>Russia</td>
+        <td>Red Square - oldest and largest square in whole Russia</td>
+        <td>6 Days</td>
+    </tr> 
       </table>
-      
+    <hr>
+    <h3><i>Button text toggle in jquery?</i></h3>
+    <footer>
+    <p>Link to the source of above question: <a href="https://stackoverflow.com/questions/13652835/button-text-toggle-in-jquery">Link</a></p>
+    </footer>
+<pre>
+    $("button").click(function() {
+      $(this).text(function(i, text) {
+        return text === "Show more" ? "Show less" : "Show more";
+      });
+    });
+</pre>
+  
     </body>
 </html>
